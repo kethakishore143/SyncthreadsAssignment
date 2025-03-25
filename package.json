@@ -1,0 +1,30 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "for authentication",
+  "main": "Server.js",
+  "scripts": {
+    "start": "node Server",
+    "Server": "nodemon Server",
+    "clientappk": "npm start --prefix clientappk",
+    "dev" : "concurrently \"npm run Server\" \"npm run clientappk\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "SyncthreadsAssignment"
+  },
+  "author": "ketakishore",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "create-react-app": "^1.5.2",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.12.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  }
+}
